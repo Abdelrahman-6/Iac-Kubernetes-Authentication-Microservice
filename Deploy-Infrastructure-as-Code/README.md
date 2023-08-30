@@ -12,5 +12,4 @@ Use the delete-stack.sh script to delete stacks as shown below
 ./delete-stack.sh udagramservers
 
 ## URL CHECK
-http://udacity-project-udagram-s3-abdelrahman.s3-website-us-east-1.amazonaws.com/index
-http://udagr-WebAp-13A4AYASXTU6C-347986745.us-east-1.elb.amazonaws.com
+http://udagr-webap-oe3086mk3nbq-174419873.us-east-1.elb.amazonaws.com/

@@ -43,11 +43,13 @@ Resources:
       LaunchTemplateName: !Sub "${ProjectName}-web-servers"
       LaunchTemplateData:
         UserData:
-          Fn::Base64: |
+          Fn::Base64: !Sub |
             #!/bin/bash
             apt-get update -y
-            sudo apt-get install nginx -y
-            service nginx start
+            sudo apt-get install apache2 -y
+            systemctl start apache2.service
+            cd /var/www/html
+            echo "it works! Udagram, Udacity" > index.html
         ImageId: ami-053b0d53c279acc90
         SecurityGroupIds:
           - !Ref WebServerSecGroup
