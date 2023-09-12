@@ -1,1 +1,0 @@
-kubectl create secret generic udacity --from-literal=DB_PASSWORD=xaHHckZaPm
